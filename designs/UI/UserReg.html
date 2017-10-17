@@ -2,20 +2,21 @@
 <html lang ="en">
 	<head>
 		<title>UserReg</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	<body style="color:blue; background-color: #b9b9b9;">
 		<h1 align = "center">YUMMY RECIPES</h1>
-		<div align = "center" style = "display: block;">
-			<form>
+		<div class = "container" align = "center" >
+			<form class = "form-signin">
 				Username: 
-				<input type = "text" name = "username"><br />
+				<input type = "text" class= "btn-lg"  name = "username"><br />
 				Email: 
-				<input type = "text" name = "email"><br />
+				<input type = "email" id= "inputEmail" class= "btn-lg"  name = "email"><br />
 				Password: 
-				<input type = "password" name = "password"><br />
+				<input type = "password" id= "inputPassword" name = "password" class= "btn-lg" required><br />
 				Confirm Password: 
-				<input type = "password" name = "conpassword"><br />
-				<input type="submit" value="Submit">
+				<input type = "password" id= "inputPassword" name = "conpassword" class= "btn-lg" required><br />
+				<button class="btn-lg btn-primary">SUBMIT</button>
 			</form>
 		</div>
 	</body>
