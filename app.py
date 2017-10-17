@@ -16,7 +16,7 @@ def showLogin():
 	return render_template('designs/UI/LoginPage.html')
 
 #a method to enable the use to signup
-@app.route('/signUp' , methods =['POST'])
+@app.route('/UserReg' , methods =['POST'])
 def signUp():
 	#code to get the input entered by the user
 	username = request.form['username']
@@ -25,11 +25,7 @@ def signUp():
 	conpwd = request.form['conpassword']
 
 	#validation of the data received
-	if username and email and pwd:
-		return json.dumps({'html':'<span>All fields good !!</span>'})
-	else:
-
-		return json.dumps({'html':'<span>Enter the required fields</span>'})
+	return username, email, pwd, conpwd
 
 
 
